@@ -1,0 +1,52 @@
+.shape
+{
+    transform: rotate(180deg);
+}
+
+.heart{
+    background-color: black;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.heart::before,
+.heart::after{
+    content: "";
+    background-color: black;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+
+.heart::before{
+    top: -15px;
+    left: 0;
+}
+
+.heart::after{
+    left: 15px;
+    top: 0;
+}
+
+.tale{
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 20px solid #000;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 20px;
+    right: -3px;
+}
+
+.center{
+    margin-top: 250px;
+    margin-right: 750px;
+}
